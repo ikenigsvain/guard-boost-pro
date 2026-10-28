@@ -1,0 +1,25 @@
+name: "💡 Send your idea (short version)"
+description: For builders who need a quick way to send their Week 1 idea. About 5 minutes.
+title: "My idea: "
+labels: ["wall"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **You need a GitHub account to send this form.** No account yet? Do Steps 1 to 3 of the [Week 1 assignment](https://github.com/hechoenosa/zerotohero2026/blob/main/weeks/week-1/assignment.md) first (choose your handle, create your account, keep your email private). Then come back to this page.
+
+        **Title:** Write your handle after `My idea: `. Fill in two boxes and click **Create**.
+  - type: textarea
+    id: what
+    attributes:
+      label: "💡 What's your idea?"
+      description: One or two sentences. No idea yet? Write "Still deciding" and a problem you've noticed. It can change later.
+    validations:
+      required: true
+  - type: textarea
+    id: who
+    attributes:
+      label: Who is it for, and what problem does it solve for them?
+      description: First names or roles only, like "surfers in Dominical" or "my uncle who fishes in Uvita".
+    validations:
+      required: true

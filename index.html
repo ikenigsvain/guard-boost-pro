@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Osa</title>
+
+  <!-- Someone else already wrote the confetti. 1 line and it's ours.
+       Alguien ya escribió el confeti. Una línea y es nuestro.
+       Their code: github.com/catdad/canvas-confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1/dist/confetti.browser.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Georgia, serif;
+      background: #f4efe6;   /* ✏️ try another colour / prueba otro color: #0b3d2e */
+      color: #1d1d1b;
+      text-align: center;
+      padding: 24px;
+    }
+    h1 { font-size: 3rem; margin: 0 0 8px; }
+    p  { font-size: 1.25rem; max-width: 32ch; margin: 0 auto 24px; }
+    button {
+      font: inherit;
+      font-size: 1.1rem;
+      padding: 12px 24px;
+      border: 2px solid currentColor;
+      border-radius: 999px;
+      background: transparent;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- ✏️ 1. Change this to your GitHub handle / Cambia esto por tu usuario de GitHub -->
+    <h1>Hola, soy @your-handle</h1>
+
+    <!-- ✏️ 2. One sentence about you / Una frase sobre ti -->
+    <p>I live between the jungle and the Pacific, and this is my first website.</p>
+
+    <!-- ✏️ 3. Pick your emoji / Elige tu emoji -->
+    <button onclick="celebrate()">🐋 Click me</button>
+  </main>
+
+  <script>
+    function celebrate() {
+      confetti({ particleCount: 150, spread: 80 });
+    }
+  </script>
+</body>
+</html>

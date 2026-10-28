@@ -1,0 +1,35 @@
+name: "🧱 I'm in! (join the Wall)"
+description: Send your idea and join the Wall. Your weekly updates for Weeks 1–2 go in this issue's comments.
+title: "I'm in: "
+labels: ["wall"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Title:** Write your handle after `I'm in: `. Fill in two boxes, tick one, and click **Create**.
+  - type: textarea
+    id: what
+    attributes:
+      label: "💡 What's your idea?"
+      description: One or two sentences. No idea yet? Write "Still deciding" and a problem you've noticed. It can change later.
+    validations:
+      required: true
+  - type: textarea
+    id: who
+    attributes:
+      label: Who is it for, and what problem does it solve for them?
+      description: First names or roles only, like "surfers in Dominical" or "my uncle who fishes in Uvita".
+    validations:
+      required: true
+  - type: checkboxes
+    id: tools
+    attributes:
+      label: My tools
+      options:
+        - label: VS Code and Git are installed (Steps 4–6)
+          required: true
+  - type: input
+    id: link
+    attributes:
+      label: "🎁 My live website (optional)"
+      placeholder: https://your-handle.github.io/hello-osa
